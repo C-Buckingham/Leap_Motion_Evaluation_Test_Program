@@ -35,6 +35,7 @@
             this.Counter_Value = new System.Windows.Forms.Label();
             this.Practice_Radio_Button = new System.Windows.Forms.RadioButton();
             this.Test_Radio_Button = new System.Windows.Forms.RadioButton();
+            this.Show_Form2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Exit_Button
@@ -88,17 +89,28 @@
             this.Test_Radio_Button.Text = "Test Mode";
             this.Test_Radio_Button.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Show_Form2
+            // 
+            this.Show_Form2.Location = new System.Drawing.Point(30, 135);
+            this.Show_Form2.Name = "Show_Form2";
+            this.Show_Form2.Size = new System.Drawing.Size(86, 23);
+            this.Show_Form2.TabIndex = 5;
+            this.Show_Form2.Text = "New Window";
+            this.Show_Form2.UseVisualStyleBackColor = true;
+            this.Show_Form2.Click += new System.EventHandler(this.Show_Form2_Click);
+            // 
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1042);
+            this.Controls.Add(this.Show_Form2);
             this.Controls.Add(this.Test_Radio_Button);
             this.Controls.Add(this.Practice_Radio_Button);
             this.Controls.Add(this.Counter_Value);
             this.Controls.Add(this.Coutner_Button);
             this.Controls.Add(this.Exit_Button);
-            this.Name = "Form1";
+            this.Name = "Main";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -114,6 +126,7 @@
         private System.Windows.Forms.Label Counter_Value;
         private System.Windows.Forms.RadioButton Practice_Radio_Button;
         private System.Windows.Forms.RadioButton Test_Radio_Button;
+        private System.Windows.Forms.Button Show_Form2;
     }
 }
 

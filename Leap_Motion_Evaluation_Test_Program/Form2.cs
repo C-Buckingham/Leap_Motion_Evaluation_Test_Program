@@ -16,5 +16,10 @@ namespace Leap_Motion_Evaluation_Test_Program
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            this.TopMost = true;
+        }
     }
 }

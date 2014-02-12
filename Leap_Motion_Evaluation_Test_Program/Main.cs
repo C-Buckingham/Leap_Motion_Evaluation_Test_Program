@@ -21,7 +21,6 @@ namespace Leap_Motion_Evaluation_Test_Program
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
             Cursor.Position = new Point(0, 0);
@@ -35,10 +34,15 @@ namespace Leap_Motion_Evaluation_Test_Program
         private void Coutner_Button_Click(object sender, EventArgs e)
         {
             Counter_Value.Text = counter++.ToString();
+
             if (counter == 6)
-            {
                 Coutner_Button.Visible = false;
-            }
+        }
+
+        private void Show_Form2_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
         }
 
     }
