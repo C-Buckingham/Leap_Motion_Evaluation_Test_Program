@@ -16,7 +16,7 @@ namespace Leap_Motion_Evaluation_Test_Program
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Main());
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Leap_Motion_Evaluation_Test_Program
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -33,6 +33,8 @@
             this.Time_Taken_Timer = new System.Windows.Forms.Timer(this.components);
             this.Coutner_Button = new System.Windows.Forms.Button();
             this.Counter_Value = new System.Windows.Forms.Label();
+            this.Practice_Radio_Button = new System.Windows.Forms.RadioButton();
+            this.Test_Radio_Button = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // Exit_Button
@@ -47,7 +49,7 @@
             // 
             // Coutner_Button
             // 
-            this.Coutner_Button.Location = new System.Drawing.Point(12, 13);
+            this.Coutner_Button.Location = new System.Drawing.Point(1080, 606);
             this.Coutner_Button.Name = "Coutner_Button";
             this.Coutner_Button.Size = new System.Drawing.Size(75, 23);
             this.Coutner_Button.TabIndex = 1;
@@ -58,17 +60,41 @@
             // Counter_Value
             // 
             this.Counter_Value.AutoSize = true;
-            this.Counter_Value.Location = new System.Drawing.Point(93, 18);
+            this.Counter_Value.Location = new System.Drawing.Point(1161, 611);
             this.Counter_Value.Name = "Counter_Value";
             this.Counter_Value.Size = new System.Drawing.Size(35, 13);
             this.Counter_Value.TabIndex = 2;
             this.Counter_Value.Text = "label1";
+            // 
+            // Practice_Radio_Button
+            // 
+            this.Practice_Radio_Button.AutoSize = true;
+            this.Practice_Radio_Button.Checked = true;
+            this.Practice_Radio_Button.Location = new System.Drawing.Point(12, 13);
+            this.Practice_Radio_Button.Name = "Practice_Radio_Button";
+            this.Practice_Radio_Button.Size = new System.Drawing.Size(94, 17);
+            this.Practice_Radio_Button.TabIndex = 3;
+            this.Practice_Radio_Button.TabStop = true;
+            this.Practice_Radio_Button.Text = "Practice Mode";
+            this.Practice_Radio_Button.UseVisualStyleBackColor = true;
+            // 
+            // Test_Radio_Button
+            // 
+            this.Test_Radio_Button.AutoSize = true;
+            this.Test_Radio_Button.Location = new System.Drawing.Point(12, 37);
+            this.Test_Radio_Button.Name = "Test_Radio_Button";
+            this.Test_Radio_Button.Size = new System.Drawing.Size(76, 17);
+            this.Test_Radio_Button.TabIndex = 4;
+            this.Test_Radio_Button.Text = "Test Mode";
+            this.Test_Radio_Button.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1042);
+            this.Controls.Add(this.Test_Radio_Button);
+            this.Controls.Add(this.Practice_Radio_Button);
             this.Controls.Add(this.Counter_Value);
             this.Controls.Add(this.Coutner_Button);
             this.Controls.Add(this.Exit_Button);
@@ -86,6 +112,8 @@
         private System.Windows.Forms.Timer Time_Taken_Timer;
         private System.Windows.Forms.Button Coutner_Button;
         private System.Windows.Forms.Label Counter_Value;
+        private System.Windows.Forms.RadioButton Practice_Radio_Button;
+        private System.Windows.Forms.RadioButton Test_Radio_Button;
     }
 }
 

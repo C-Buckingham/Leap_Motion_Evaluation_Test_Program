@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Leap_Motion_Evaluation_Test_Program
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
         int counter = 1;
-        public Form1()
+        public Main()
         {
             InitializeComponent();
 
@@ -24,6 +24,7 @@ namespace Leap_Motion_Evaluation_Test_Program
             this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
+            Cursor.Position = new Point(0, 0);
         }
 
         private void Exit_Button_Click(object sender, EventArgs e)
