@@ -15,18 +15,14 @@ namespace Leap_Motion_Evaluation_Test_Program
         public Form2()
         {
             InitializeComponent();
+            this.Size = new System.Drawing.Size(300, 300);
+            CenterToParent();
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
             this.TopMost = true;
             webBrowser1.Navigate("www.bbc.co.uk");
-        }
-
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-
         }
     }
 }
